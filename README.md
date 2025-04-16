@@ -1,70 +1,29 @@
-### Fixing the Buggy Code
-
-- This code has 30 issues out of which 1 is no code in style.css . 
-- The total marks for the entire codebase is 40, some issues have more marks than the other one. Style.css is of 5 marks. It will get scaled down to 20. All team members will get equal marks.
-- You are suppose to work in teams of 4 or 5
-- Each team member has to identify atleast 4 issues and fix atleast 4 issue. If someone doesn't do this, their marks get deducted.
-- You are suppose to work on a git repository as collaborators
-
-### What kind of bugs are there
-
-- Bugs which will break your code
-- Bugs might be a single word
-- Bugs might be section of removed code
-- Bugs might be section of unnecessary code
-- Bugs might be useless files
-- Bugs might be in the UI/UX of the pages
-- Bugs might be in the api calls
-- Bugs might be in the dependencies  
-
-### submission format
-
-- Make submissions on moodle
-- Do not remove .git folder 
-- Only 1 submission per team
-- Submit it as Corrected_Code.zip
-
-### Add the names of the members and roll numbers of your team below
-
-- Name : Roll Number
-
-### Table to keep track
-
 | ID  | Issue Description                        | Identified By | Fixed By     |
 |-----|------------------------------------------|---------------|--------------|
-| 1   | Style.css is not filled                  |        Narain |Whole Team    |
-| 2   | Removed hardcoded users list (analytics.py) | Sambhavi      |Sambhavi      |
-| 3   |  Corrected field names from 'names' to 'name' and 'usernames' to 'username' (analytics.py) | Sambhavi | Sambhavi |
-| 4   |  Added plot to response   (analytics.py) | Sambhavi      | Sambhavi     |
-| 5   |   Added prefix to quiz router (main.py)  |  Sambhavi     | Sambhavi     |
-| 6   |Removed unnecessary /home endpoint(main.py)| Sambhavi     |   Sambhavi   |
-| 7   | news.js   better error  handling           Sara
-8 profle.js html code was looking for userCounts Sara
-9their was of no use PATCH ,we need to use DELETE,    Sara                                 |               |            
- 10 quiz.js...their should be .hidden in styles. Sara                               |               |              |
-|    |
-| 11   added navigation links in analytics.html      Aishani Sood       Aishani Sood              |               |              |
-| 12   | made src empty in analytics.html          Aishani Sood      Aishani Sood               |               |              |
-| 13   |       add container in item.html          Aishani Sood     Aishani Sood                    |               |              |
-| 14   |analytics.js-sends image as base64 in data.plot_base64  Aishani Sood  Aishani Sood             |              |
-| 10  |                                          |               |              |
-| 11  |                                          |               |              |
-| 12  |                                          |               |              |
-| 13  |                                          |               |              |
-| 14  |                                          |               |              |
-| 15  |                                          |               |              |
-| 16  |                                          |               |              |
-| 17  |                                          |               |              |
-| 18  |                                          |               |              |
-| 19  |                                          |               |              |
-| 20  |                                          |               |              |
-| 21  |                                          |               |              |
-| 22  |                                          |               |              |
-| 23  |                                          |               |              |
-| 24  |                                          |               |              |
-| 25  |                                          |               |              |
-| 26  |                                          |               |              |
-| 27  |                                          |               |              |
-| 28  |                                          |               |              |
-| 29  |                                          |               |              |
-| 30  |                                          |               |              |
+| 1   | Style.css is not filled                                    |         Narain |     Whole Team     |
+| 2   | in items.py: router was initialized as empty dict                       Pragya               
+| 3   | in items.py: duplicate post route for same endpoint was there            Pragya                           
+| 4   | in items.py: assuming we want to delete only one item: there were dual delete operations, incorrect path parameters, and was outputting wrong "deleted_item"                                                                       Pragya
+| 5   | in users.py: incorrect HTTP method for get_users() - it should obviously be a "get" instead of a "post"  Pragya
+| 6   | in users.py: duplicate post route for "/"                               Pragya
+| 7   | in users.py: invalid delete function - delete_all() is not a valid function - changed it to delete_one()    Pragya
+| 8   | in quiz.py: in get_question(), it always returned the first question, we put a random function to simulate a proper quiz    Prathmesh
+| 9   | in quiz.py: HTTP method for submitting answers should be "POST" not "GET"                          Prathmesh
+| 10  | in analytics.py: users list had dummy data, removed that and started with a empty list  sambhavi
+| 11  | in analytics.py: incorrect field names: item["names"] -> item["name"] & user["usernames"] -> user["username"]   sambhavi
+| 12  | in analytics.py: generated histogram image was not being returned in json response sambhavi
+| 13  | in models.py: item class was not inheriting from pydantic BaseModel    Prathmesh
+| 14  | in models.py: in item class name field should be "str" instead of "int" Prathmessh
+| 15  | in main.py: added prefix "/analytics" to analytics_router & "/quiz" to quiz_router   sambhavi
+| 16  | in main.py: removed the get_home() function and "/home" API endpoint    sambhavi
+| 17   added navigation links in analytics.html      Aishani Sood       Aishani Sood              |               |              |
+| 18   | made src empty in analytics.html          Aishani Sood      Aishani Sood               |               |              |
+| 19  |       add container in item.html          Aishani Sood     Aishani Sood                    |               |              |
+| 20  |analytics.js-sends image as base64 in data.plot_base64  Aishani Sood  Aishani Sood
+| 21 | news.js   better error  handling           Sara
+|22|  profle.js html code was looking for userCounts Sara
+|23| their was of no use PATCH ,we need to use DELETE,    Sara                                 |               |            
+ 24 | quiz.js...their should be .hidden in styles. Sara    
+|25| remove home.js  Sara
+ 26 | in db.py Standardized collection names to plural     
+        # FROM: items_collection: db["item"]                 Prathmesh 
