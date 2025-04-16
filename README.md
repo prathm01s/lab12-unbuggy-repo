@@ -42,8 +42,11 @@
 8 profle.js html code was looking for userCounts Sara
 9their was of no use PATCH ,we need to use DELETE,    Sara                                 |               |            
  10 quiz.js...their should be .hidden in styles. Sara                               |               |              |
-| 8   |                                          |               |              |
-| 9   |                                          |               |              |
+|    |
+| 11   added navigation links in analytics.html      Aishani Sood       Aishani Sood              |               |              |
+| 12   | made src empty in analytics.html          Aishani Sood      Aishani Sood               |               |              |
+| 13   |       add container in item.html          Aishani Sood     Aishani Sood                    |               |              |
+| 14   |analytics.js-sends image as base64 in data.plot_base64  Aishani Sood  Aishani Sood             |              |
 | 10  |                                          |               |              |
 | 11  |                                          |               |              |
 | 12  |                                          |               |              |
