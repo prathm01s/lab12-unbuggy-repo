@@ -38,7 +38,10 @@
 | 4   |  Added plot to response   (analytics.py) | Sambhavi      | Sambhavi     |
 | 5   |   Added prefix to quiz router (main.py)  |  Sambhavi     | Sambhavi     |
 | 6   |Removed unnecessary /home endpoint(main.py)| Sambhavi     |   Sambhavi   |
-| 7   |                                          |               |              |
+| 7   | news.js   better error  handling           Sara
+8 profle.js html code was looking for userCounts Sara
+9their was of no use PATCH ,we need to use DELETE,    Sara                                 |               |            
+ 10 quiz.js...their should be .hidden in styles. Sara                               |               |              |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
 | 10  |                                          |               |              |
